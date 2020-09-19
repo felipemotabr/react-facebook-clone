@@ -17,7 +17,7 @@ import {
   ReplyComment
 } from './styles';
 
-import logo from './../../Images/Facebook_Logo.png';
+import ProfileImage from './../../Images/avatar.jpg';
 import IconLike from './../../Images/like.svg'
 import IconAngry from './../../Images/angry.svg'
 import IconCare from './../../Images/care.svg'
@@ -33,7 +33,7 @@ const Post: React.FC = () => {
   return (
     <Container>
       <Header>
-        <img src={logo} alt='' />
+        <img src={ProfileImage} alt='' />
         <div className={'info'}>
           <span>Felipe Mota</span>
           <div className="time">8 h · <IconPublic /></div>

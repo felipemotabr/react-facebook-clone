@@ -4,13 +4,15 @@ import { Container, Wrapper } from './styles';
 import TopBar from './../Topbar';
 import Posts from './../Post';
 import CreatePost from './../CreatePost';
+import SidebarLeft from './../../components/SidebarLeft'
+import SidebarRight from './../../components/SidebarRight'
 
 const Layout: React.FC = () => {
   return (
     <Container>
       <TopBar />
       <Wrapper>
-        {/* <SidebarLeft /> */}
+        <SidebarLeft />
         <div className={'content'}>
           <CreatePost />
           <Posts />
@@ -18,7 +20,7 @@ const Layout: React.FC = () => {
           <Posts />
           <Posts />
         </div>
-        {/* <SidebarRight /> */}
+        <SidebarRight />
       </Wrapper>
     </Container>
   );

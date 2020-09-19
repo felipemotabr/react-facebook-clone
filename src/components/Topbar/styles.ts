@@ -20,17 +20,16 @@ const iconLeft = css`
 `;
 
 export const Container = styled.div`
+  position: fixed;
+  top: 0;
+  z-index: 1;
   background: var(--secondary);
   width: 100%;
-  overflow: hidden;
   height: 60px;
   display: flex;
   justify-content: space-between;
   padding-left: 15px;
   padding-right: 15px;
-  position: sticky;
-  top: 0;
-  z-index: 2;
 
   .Tooltip {
     background-color: rgba(255, 255, 255, 0.9);
@@ -61,7 +60,6 @@ export const Right = styled.div`
   .Tooltip {
     margin-top: 11px!important;
   }
-
   > ul {
     list-style: none;
     display: flex;
@@ -210,12 +208,11 @@ export const Avatar = styled.div`
   background: var(--primary-button-background);
   width: 28px;
   height: 28px;
-  border-radius: 50%;
-
-  > img {
-    width:100%;
-  }
   
+    > img {
+      width:100%;
+      border-radius: 50%;
+    }
 `;
 
 export const IconPlus = styled(Plus)`

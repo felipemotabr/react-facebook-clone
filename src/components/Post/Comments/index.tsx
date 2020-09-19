@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Container, Avatar, Content } from './styles';
-import logo from './../../../Images/Facebook_Logo.png';
+import ProfileImage from './../../../Images/avatar.jpg';
 
 const Comments: React.FC = () => {
   return (
@@ -9,7 +9,7 @@ const Comments: React.FC = () => {
       <div className={'divisor'}></div>
       <Avatar>
         <a href={'/'}>
-          <img src={logo} alt={''} />
+          <img src={ProfileImage} alt={''} />
         </a>
       </Avatar>
       <Content>

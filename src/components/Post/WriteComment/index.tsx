@@ -4,13 +4,13 @@ import { Container, Avatar, Content, IconSmile, IconCamera, IconGif } from './st
 import ReactTooltip from 'react-tooltip';
 
 
-import image from './../../../Images/Facebook_Logo.png';
+import ProfileImage from './../../../Images/avatar.jpg';
 
 const WriteComment: React.FC = () => {
   return (
     <Container>
       <Avatar>
-        <img src={image} alt={''} />
+        <img src={ProfileImage} alt={''} />
       </Avatar>
       <Content>
         <input placeholder={'Writte a comment...'} />

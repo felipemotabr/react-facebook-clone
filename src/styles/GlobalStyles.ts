@@ -35,6 +35,7 @@ export default createGlobalStyle`
 
     --overlayer: rgba(255, 255, 255, 0.1);
     --hover-overlayer: rgba(255, 255, 255, 0.2);
+    --always-dark-overlay: rgba(0, 0, 0, 0.4);
 
 
     --notification-badge: #f02849;

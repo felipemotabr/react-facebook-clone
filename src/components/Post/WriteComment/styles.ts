@@ -41,6 +41,7 @@ export const Avatar = styled.div`
   img {
     width: 32px;
     height: 32px;
+    border-radius: 50%;
 
     &:hover {
       opacity: 0.8;

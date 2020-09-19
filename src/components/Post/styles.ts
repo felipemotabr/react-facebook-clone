@@ -49,6 +49,7 @@ export const Header = styled.div`
     flex-shrink: 0;
     width: 38px;
     height: 38px;
+    border-radius: 50%;
     cursor: pointer;
 
     &:hover {

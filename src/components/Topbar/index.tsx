@@ -23,14 +23,15 @@ import {
 
 import ReactTooltip from 'react-tooltip';
 
-import logo from './../../Images/Facebook_Logo.png';
+import Logo from './../../Images/Facebook_Logo.png';
+import ProfileImage from './../../Images/avatar.jpg';
 
 const Topbar: React.FC = () => {
   return (
     <Container>
 
       <Left>
-        <img src={logo} alt='' width={40} />
+        <img src={Logo} alt='' width={40} />
         <FormSearch>
           <IconSearch />
           <input placeholder={'Search Facebook'} />
@@ -87,7 +88,7 @@ const Topbar: React.FC = () => {
       <Right>
         <Profile>
           <Avatar>
-            <img src={logo} alt='' />
+            <img src={ProfileImage} alt='' />
           </Avatar>
           Felipe
         </Profile>
