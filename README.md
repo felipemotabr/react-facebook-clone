@@ -1,9 +1,3 @@
-<div align="center">
-
-[![Build Status][github-actions-status]][github-actions-url]
-[![Github Tag][github-tag-image]][github-tag-url]
-
-</div>
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -12,6 +6,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 First, clone the repo via git and install dependencies:
 ```bash
 git clone https://github.com/felipemotabr/facebook-clone-react.git your-project-name
+```
+
+Access the directory
+
+```bash
+cd your-project-name
 ```
 
 In the project directory, you can run:
