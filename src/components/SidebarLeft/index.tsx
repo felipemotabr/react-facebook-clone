@@ -15,13 +15,13 @@ const Sidebar: React.FC = () => {
     <Container>
       <TopBar>
         <ul>
-          <a href={''}><li><img src={ProfileImage} alt={''} /> Felipe Mota</li></a>
-          <a href={''}><li><img src={IconCovid} alt={''} /> COVID-19 Information Center</li></a>
-          <a href={''}><li><img src={IconPage} alt={''} /> Pages</li></a>
-          <a href={''}><li><img src={IconFriends} alt={''} /> Friends</li></a>
-          <a href={''}><li><img src={IconMessenger} alt={''} /> Messenger</li></a>
-          <a href={''}><li><img src={IconFundraisers} alt={''} /> Fundraisers</li></a>
-          <a href={''}><li><img src={IconMarketplace} alt={''} /> Marketplace</li></a>
+          <a href={'/'}><li><img src={ProfileImage} alt={''} /> Felipe Mota</li></a>
+          <a href={'/'}><li><img src={IconCovid} alt={''} /> COVID-19 Information Center</li></a>
+          <a href={'/'}><li><img src={IconPage} alt={''} /> Pages</li></a>
+          <a href={'/'}><li><img src={IconFriends} alt={''} /> Friends</li></a>
+          <a href={'/'}><li><img src={IconMessenger} alt={''} /> Messenger</li></a>
+          <a href={'/'}><li><img src={IconFundraisers} alt={''} /> Fundraisers</li></a>
+          <a href={'/'}><li><img src={IconMarketplace} alt={''} /> Marketplace</li></a>
         </ul>
       </TopBar>
 

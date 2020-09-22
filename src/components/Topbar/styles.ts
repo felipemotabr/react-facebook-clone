@@ -30,12 +30,18 @@ export const Container = styled.div`
   justify-content: space-between;
   padding-left: 15px;
   padding-right: 15px;
+    -webkit-user-select: none; /* Safari */        
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
 
   .Tooltip {
     background-color: rgba(255, 255, 255, 0.9);
     color: var(--primary);
     margin-top: 3px!important;
     padding: 4px 8px!important;
+    
+
 
     &.place-top,
     &:after {
@@ -208,10 +214,11 @@ export const Avatar = styled.div`
   background: var(--primary-button-background);
   width: 28px;
   height: 28px;
+  border-radius: 50%;
+  overflow: hidden;
   
     > img {
       width:100%;
-      border-radius: 50%;
     }
 `;
 

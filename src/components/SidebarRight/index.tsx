@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Container, Title, Card, Avatar } from './styles';
+import { Container, Title, Card, Avatar, Online } from './styles';
 
 import ProfileImage from './../../Images/avatar.jpg';
 
@@ -12,7 +12,14 @@ const SidebarRight: React.FC = () => {
       </Card>
 
       <Title>Birthday</Title>
-      <Card><strong>Hudson Batista</strong> and <strong>Rakel Caminha</strong> have birthdays today.
+      <Card className={'birthdays'}>
+        <ul>
+          <li>
+            <div className={'icon'}></div>
+            <div><strong>Hudson Batista</strong> and <strong>Rakel Caminha</strong> have birthdays today.</div></li>
+
+        </ul>
+
 
       </Card>
 
@@ -21,7 +28,20 @@ const SidebarRight: React.FC = () => {
         <ul>
           <li>
             <Avatar>
-              <img src={ProfileImage} />
+              <img src={ProfileImage} alt={''} />
+              <Online />
+            </Avatar>
+            <span>Felipe Mota</span>
+          </li>
+          <li>
+            <Avatar>
+              <img src={ProfileImage} alt={''} />
+            </Avatar>
+            <span>Felipe Mota</span>
+          </li>
+          <li>
+            <Avatar>
+              <img src={ProfileImage} alt={''} />
             </Avatar>
             <span>Felipe Mota</span>
           </li>

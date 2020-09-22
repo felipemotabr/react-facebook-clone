@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 import Spring from './../../Images/spring.png';
 
 export const Container = styled.div`
@@ -20,7 +20,8 @@ export const Container = styled.div`
     display: flex;
     align-items: center;
     align-content: center;
-    justify-content: center;margin-bottom: 6px;
+    justify-content: center;
+    margin-bottom: 6px;
 
     > span {
       width: 100%;
@@ -43,6 +44,7 @@ export const Container = styled.div`
         width: 24px;
         margin-right: 5px;
         background-image: url(${Spring});
+        margin-bottom: -2px;
       }
       .live {
         background-position: 0 -49px;
@@ -95,7 +97,6 @@ export const Content = styled.div`
     font-size: 18px;
     width: 100%;
     padding: 0px 17px;
-
 
     &::placeholder {
       color: var(--secondary-text);

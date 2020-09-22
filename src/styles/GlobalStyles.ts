@@ -42,6 +42,8 @@ export default createGlobalStyle`
     --always-white: #ffffff;
 
     --outline: #3e4042;
+
+    --positive: #31a24c;
     
 
   }
