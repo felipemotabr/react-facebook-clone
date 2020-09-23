@@ -206,7 +206,6 @@ export const ReplyComment = styled.div`
     &:last-child {
       width: 100%;
     }
-}
   }
 
 `;

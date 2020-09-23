@@ -12,6 +12,7 @@ const PostItem = [
   {
     id: 1,
     name: "Milad Shams",
+    publicationDate: "2 d",
     imageProfile: "/image/avatar/milad-shams-YVGe3s1Qhfw-unsplash.jpg",
     imagePost: "/image/posts/milad-shams-s_jUAnekLSA-unsplash.jpg",
     text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
@@ -23,18 +24,21 @@ const PostItem = [
       {
         id: 1,
         name: "Felipe Mota",
+        publicationDate: "3 h",
         imageProfile: "/image/avatar/felipemota.jpg",
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quibusdam consequuntur, alias veritatis iusto voluptates blanditiis. Aliquid, officia nulla saepe reiciendis consectetur",
         replies: [
           {
             id: 1,
             name: "Omid Armin",
+            publicationDate: "2 h",
             imageProfile: "/image/avatar/karsten-winegeart-KSqfFHtHpro-unsplash.jpg",
             text: "Aliquid, officia nulla saepe reiciendis consectetur",
           },
           {
             id: 2,
             name: "Hunter Matthews",
+            publicationDate: "2 h",
             imageProfile: "/image/avatar/hunter-matthews-X7gHHDPlp8U-unsplash.jpg",
             text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quibusdam consequuntur",
           },
@@ -49,6 +53,7 @@ interface CommentProps {
   name: string;
   imageProfile: any;
   text: string;
+  publicationDate: string;
   replies: any[];
 }
 
@@ -62,6 +67,7 @@ interface Post {
   totalComments: number;
   totalShares: number;
   totalReact: number;
+  publicationDate: string;
   comments: CommentProps[];
 }
 
@@ -80,6 +86,7 @@ const Layout: React.FC = () => {
               <Posts
                 key={post.id}
                 name={post.name}
+                publicationDate={post.publicationDate}
                 imageProfile={post.imageProfile}
                 imagePost={post.imagePost}
                 text={post.text}

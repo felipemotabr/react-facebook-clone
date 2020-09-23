@@ -34,6 +34,7 @@ interface CommentReply {
   name: string;
   imageProfile: any;
   text: string;
+  publicationDate: string;
 }
 
 interface Comment {
@@ -41,11 +42,13 @@ interface Comment {
   name: string;
   imageProfile: any;
   text: string;
+  publicationDate: string;
   replies: CommentReply[];
 }
 
 interface Props {
   name: string;
+  publicationDate: string;
   imageProfile: string;
   imagePost?: string;
   text: string;
@@ -65,7 +68,8 @@ const Post: React.FC<Props> = ({
   totalComments,
   totalShares,
   totalReact,
-  comments
+  publicationDate,
+  comments,
 }) => {
   return (
     <Container>
@@ -73,7 +77,7 @@ const Post: React.FC<Props> = ({
         <img src={imageProfile} alt='' />
         <div className={'info'}>
           <span>{name}</span>
-          <div className="time">8 h · <IconPublic /></div>
+          <div className="time">{publicationDate} · <IconPublic /></div>
         </div>
       </Header >
       <Text>

@@ -9,6 +9,7 @@ interface Props {
     name: string;
     text: string;
     imageProfile: any;
+    publicationDate: string;
   };
 }
 
@@ -29,7 +30,7 @@ const Comments: React.FC<Props> = ({
           <p>{data.text}</p>
         </div>
         <span>
-          <a href={'/'}>Like</a> · <a href={'/'}>Reply</a> · <a href={'/'}>5h</a>
+          <a href={'/'}>Like</a> · <a href={'/'}>Reply</a> · <a href={'/'}>{data.publicationDate}</a>
         </span>
       </Content>
     </Container>
