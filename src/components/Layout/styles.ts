@@ -5,9 +5,11 @@ export const Container = styled.div`
   margin: auto;
 
   .content {
-    width: min(590px, 100%);
+    width: min(680px, 100%);
     margin: auto;
     padding-top: 15px;
+
+    
   }
 
   @media (max-width: 500px) {

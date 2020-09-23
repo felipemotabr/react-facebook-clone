@@ -8,7 +8,7 @@ export const Container = styled.div`
   border-radius: 10px;
   margin-bottom: 15px;
   padding: 10px 16px 0 16px;
-  margin-top: 60px;
+  margin-top: 15px;
   flex-wrap: wrap;
 
   .divisor {

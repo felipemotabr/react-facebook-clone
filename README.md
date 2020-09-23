@@ -5,7 +5,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 First, clone the repo via git and install dependencies:
 ```bash
-git clone https://github.com/felipemotabr/facebook-clone-react.git your-project-name
+git clone https://github.com/felipemotabr/facebook-react-clone.git your-project-name
 ```
 
 Access the directory

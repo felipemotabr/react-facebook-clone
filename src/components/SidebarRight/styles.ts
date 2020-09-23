@@ -9,7 +9,11 @@ export const Container = styled.div`
     left: 0;
     max-height: 100vh;
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
+
+    @media(max-width: 900px) {
+      display: none;
+    }
 `;
 
 export const Title = styled.div`
@@ -36,7 +40,7 @@ export const Card = styled.div`
         border-radius: 5px;
 
         &:hover {
-            background: var(--hover-overlayer);
+            background: var(--overlayer);
         }
       }
     }

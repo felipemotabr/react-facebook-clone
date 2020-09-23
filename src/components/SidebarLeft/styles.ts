@@ -5,11 +5,15 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: space-between;
   max-height: 100vh;
-  width: 344px;
+  max-width: 344px;
   padding: 70px 8px 8px 8px;
   position: sticky;
   top: 0;
   left: 0;
+
+  @media(max-width: 1300px) {
+    display: none;
+  }
 `;
 
 export const TopBar = styled.div`
