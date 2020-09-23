@@ -1,23 +1,32 @@
 import React from 'react';
 
 import { Container, Avatar, Content } from './styles';
-import ProfileImage from './../../../Images/avatar.jpg';
+// import ProfileImage from './../../../Images/avatar.jpg';
 
-const Comments: React.FC = () => {
+interface Props {
+  data: {
+    id: number;
+    name: string;
+    text: string;
+    imageProfile: any;
+  };
+}
+
+const Comments: React.FC<Props> = ({
+  data
+}) => {
   return (
     <Container>
       <div className={'divisor'}></div>
       <Avatar>
         <a href={'/'}>
-          <img src={ProfileImage} alt={''} />
+          <img src={data.imageProfile} alt={''} />
         </a>
       </Avatar>
       <Content>
         <div>
-          <strong><a href={'/'}>Felipe Mota</a></strong>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Harum quibusdam consequuntur, alias veritatis iusto voluptates blanditiis.
-          Aliquid, officia nulla saepe reiciendis consectetur</p>
+          <strong><a href={'/'}>{data.name}</a></strong>
+          <p>{data.text}</p>
         </div>
         <span>
           <a href={'/'}>Like</a> · <a href={'/'}>Reply</a> · <a href={'/'}>5h</a>

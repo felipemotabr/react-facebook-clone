@@ -96,9 +96,13 @@ export const IconShared = styled(ShareForward)`
 `;
 
 export const CardImage = styled.div`
-  background: var(--secondary-text);
+  /* background: var(--secondary-text); */
   width: 100%;
-  height: 200px;
+  /* height: 200px; */
+  img {
+    width: 100%;
+
+  }
 `;
 
 export const Footer = styled.div`
@@ -192,11 +196,17 @@ export const CommentStatic = styled.div`
 
 export const ReplyComment = styled.div`
   display: flex;
+  align-content: left;
+  align-items: left;
 
   span {
     &:first-child {
       width: 93px;
     }
+    &:last-child {
+      width: 100%;
+    }
+}
   }
 
 `;
