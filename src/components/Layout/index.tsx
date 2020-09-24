@@ -20,6 +20,9 @@ const PostItem = [
     totalShares: 10,
     totalReact: 34,
     reaturedReactionName: 'Felipe Mota',
+    reaction: [
+      "Like", "Love", "Smile"
+    ],
     comments: [
       {
         id: 1,
