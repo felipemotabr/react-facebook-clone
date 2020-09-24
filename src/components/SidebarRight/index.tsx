@@ -1,8 +1,9 @@
 import React from 'react';
 
-import { Container, Title, Card, Avatar, Online } from './styles';
+// @ts-ignore
+import AdSense from 'react-adsense';
 
-import Ads from './Ads'
+import { Container, Title, Card, Avatar, Online } from './styles';
 
 const Contacts = [
   {
@@ -37,7 +38,13 @@ const SidebarRight: React.FC = () => {
     <Container>
       <Title>Sponsored</Title>
       <Card>
-        <Ads />
+        <AdSense.Google
+          client='ca-pub-2610476184205193'
+          slot='1881999710'
+          style={{ display: 'block' }}
+          format='auto'
+          responsive='true'
+        />
       </Card>
 
       <Title>Birthday</Title>
