@@ -43,7 +43,7 @@ The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
 
 
-## Autho
+## Author
 [Felipe Mota](https://github.com/felipemotabr)
 
 ## Contributing
