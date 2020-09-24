@@ -2,6 +2,8 @@ import React from 'react';
 
 import { Container, Title, Card, Avatar, Online } from './styles';
 
+import Ads from './Ads'
+
 const Contacts = [
   {
     id: 1,
@@ -23,6 +25,11 @@ const Contacts = [
     name: 'Hunter Matthews',
     imagem_profile: '/image/avatar/hunter-matthews-X7gHHDPlp8U-unsplash.jpg',
   },
+  {
+    id: 5,
+    name: 'Stephan Louis',
+    imagem_profile: '/image/avatar/stephan-louis-VXzH2o3olpA-unsplash.jpg',
+  },
 ]
 
 const SidebarRight: React.FC = () => {
@@ -30,6 +37,7 @@ const SidebarRight: React.FC = () => {
     <Container>
       <Title>Sponsored</Title>
       <Card>
+        <Ads />
       </Card>
 
       <Title>Birthday</Title>
@@ -38,10 +46,7 @@ const SidebarRight: React.FC = () => {
           <li>
             <div className={'icon'}></div>
             <div><strong>Hudson Batista</strong> and <strong>Rakel Caminha</strong> have birthdays today.</div></li>
-
         </ul>
-
-
       </Card>
 
       <Title>Contacts</Title>
