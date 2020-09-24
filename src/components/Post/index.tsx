@@ -19,12 +19,12 @@ import {
 
 
 import IconLike from './../../Images/like.svg'
-import IconAngry from './../../Images/angry.svg'
-import IconCare from './../../Images/care.svg'
+// import IconAngry from './../../Images/angry.svg'
+// import IconCare from './../../Images/care.svg'
 import IconHaha from './../../Images/haha.svg'
 import IconLove from './../../Images/love.svg'
-import IconSad from './../../Images/sad.svg'
-import IconWow from './../../Images/wow.svg'
+// import IconSad from './../../Images/sad.svg'
+// import IconWow from './../../Images/wow.svg'
 
 import Comments from './Comments'
 import WriteComment from './WriteComment'
@@ -92,7 +92,7 @@ const Post: React.FC<Props> = ({
             <li><img src={IconLike} alt="" /></li>
             <li><img src={IconLove} alt="" /></li>
             <li><img src={IconHaha} alt="" /></li>
-            <li><a href="{/}">{reaturedReactionName} e outras {totalReact} pessoas</a></li>
+            <li><a href="{/}">{reaturedReactionName} and {totalReact} others</a></li>
           </ul>
         </Reaction>
         <Status>
