@@ -2,6 +2,10 @@
 
 This is React Facebook Clone. A clone of the dark version of the popular social network. 
 
+<p align="center">
+  <a href="https://react-facebook-clone.vercel.app"><strong>***Demo***</strong></a>
+</p>
+
 ## Install
 
 First, clone the repo via git and install dependencies:
