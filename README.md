@@ -1,12 +1,16 @@
 ![Screenshot](screenshot.png)
 
+<p align="center">
+  <a href="https://react-facebook-clone.vercel.app"><strong>***Demo***</strong></a>
+</p>
+
 This is React Facebook Clone. A clone of the dark version of the popular social network. 
 
 ## Install
 
 First, clone the repo via git and install dependencies:
 ```bash
-git clone https://github.com/felipemotabr/facebook-react-clone.git your-project-name
+git clone https://github.com/felipemotabr/react-facebook-clone.git your-project-name
 ```
 
 Access the directory
@@ -43,7 +47,7 @@ The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
 
 
-## Autho
+## Author
 [Felipe Mota](https://github.com/felipemotabr)
 
 ## Contributing
