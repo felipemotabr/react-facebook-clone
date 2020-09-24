@@ -49,6 +49,46 @@ const PostItem = [
       }
     ],
   },
+  {
+    id: 2,
+    name: "Stephan Louis",
+    publicationDate: "2 h",
+    imageProfile: "/image/avatar/stephan-louis-VXzH2o3olpA-unsplash.jpg",
+    imagePost: "/image/posts/stephan-louis-o_85sZfPj4U-unsplash.jpg",
+    text: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here'",
+    totalComments: 23,
+    totalShares: 10,
+    totalReact: 34,
+    reaturedReactionName: 'Felipe Mota',
+    reaction: [
+      "Like", "IconCare", "IconWow"
+    ],
+    comments: [
+      {
+        id: 1,
+        name: "Omid Armin",
+        publicationDate: "1 h",
+        imageProfile: "/image/avatar/omid-armin-DeQ7YsiD6v8-unsplash.jpg",
+        text: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form",
+        replies: [
+          {
+            id: 1,
+            name: "Karsten Winegeart",
+            publicationDate: "40 min",
+            imageProfile: "/image/avatar/karsten-winegeart-KSqfFHtHpro-unsplash.jpg",
+            text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+          },
+          {
+            id: 2,
+            name: "Stephan Louis",
+            publicationDate: "30 min",
+            imageProfile: "/image/avatar/stephan-louis-VXzH2o3olpA-unsplash.jpg",
+            text: "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+          },
+        ],
+      }
+    ],
+  },
 ]
 
 interface CommentProps {
