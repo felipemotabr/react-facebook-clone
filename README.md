@@ -6,7 +6,7 @@ This is React Facebook Clone. A clone of the dark version of the popular social 
 
 First, clone the repo via git and install dependencies:
 ```bash
-git clone https://github.com/felipemotabr/facebook-react-clone.git your-project-name
+git clone https://github.com/felipemotabr/react-facebook-clone.git your-project-name
 ```
 
 Access the directory
