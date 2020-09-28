@@ -26,6 +26,8 @@ import IconLove from './../../Images/love.svg'
 // import IconSad from './../../Images/sad.svg'
 // import IconWow from './../../Images/wow.svg'
 
+import GetReaction from '../../helpers/Reaction'
+
 import Comments from './Comments'
 import WriteComment from './WriteComment'
 
@@ -53,6 +55,7 @@ interface Props {
   imagePost?: string;
   text: string;
   reaturedReactionName: string;
+  reaction: any;
   totalComments: number;
   totalShares: number;
   totalReact: number;
@@ -64,6 +67,7 @@ const Post: React.FC<Props> = ({
   imageProfile,
   imagePost,
   text,
+  reaction,
   reaturedReactionName,
   totalComments,
   totalShares,
@@ -89,9 +93,12 @@ const Post: React.FC<Props> = ({
       <Footer>
         <Reaction>
           <ul>
-            <li><img src={IconLike} alt="" /></li>
+            {
+              reaction.map((react: any) => <li><img src={GetReaction(react)} alt="" /></li>)
+            }
+            {/* <li><img src={IconLike} alt="" /></li>
             <li><img src={IconLove} alt="" /></li>
-            <li><img src={IconHaha} alt="" /></li>
+            <li><img src={IconHaha} alt="" /></li> */}
             <li><a href="{/}">{reaturedReactionName} and {totalReact} others</a></li>
           </ul>
         </Reaction>
