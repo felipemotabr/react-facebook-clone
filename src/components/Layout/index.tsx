@@ -106,6 +106,7 @@ interface Post {
   imageProfile: string;
   imagePost?: string;
   text: string;
+  reaction: any;
   reaturedReactionName: string;
   totalComments: number;
   totalShares: number;
@@ -133,6 +134,7 @@ const Layout: React.FC = () => {
                 imageProfile={post.imageProfile}
                 imagePost={post.imagePost}
                 text={post.text}
+                reaction={post.reaction}
                 totalComments={post.totalComments}
                 totalShares={post.totalShares}
                 totalReact={post.totalReact}
